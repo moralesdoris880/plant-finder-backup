@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import About from './pages/About';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LearnMore from './pages/LearnMore';
@@ -15,11 +16,11 @@ root.render(
     <BrowserRouter> 
     <Routes> 
       <Route exact strict path='/'element={<App />} />
-      <Route exact path='/About'element={<About />} />
-      <Route exact path='/LearnMore'element={<LearnMore />} />
-      <Route exact path='/ZipCode'element={<ZipCode />} />
-      <Route exact path='/About/Contact'element={<Contact />} />
-      <Route exact path='/About/MeetDevelopers'element={<MeetDevelopers />} />
+      <Route exact path='/about'element={<About />} />
+      <Route exact path='/learnMore'element={<LearnMore />} />
+      <Route exact path='/zipCode'element={<ZipCode />} />
+      <Route exact path='/about/contact'element={<Contact />} />
+      <Route exact path='/about/meetdevelopers'element={<MeetDevelopers />} />
     </Routes>
     </BrowserRouter>
   </React.StrictMode>
