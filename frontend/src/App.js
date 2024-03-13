@@ -8,7 +8,7 @@ function App() {
       <div id="Map1">
         <Map
         mapLib={import('mapbox-gl')}
-        mapboxAccessToken="INSERT ACCESS TOKEN HERE"
+        mapboxAccessToken="pk.eyJ1IjoibW9yYWxlc2RvcmlzODgwIiwiYSI6ImNsdG94ZXJwYTAwNWYybWxjNWViZjRibGwifQ.SfmxhHrBFIoWtPVOzf5hmw"
         initialViewState={{
           longitude: -100,
           latitude: 40,
