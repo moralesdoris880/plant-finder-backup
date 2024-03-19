@@ -1,0 +1,47 @@
+body{
+    height: 200vh;
+    background-color: #789065;
+  }
+  p1{
+    font-family: sans-serif;
+    font-weight: 20;
+    font-style: normal;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+    top: 60px;
+    
+  }
+  p2{
+    font-family: sans-serif;
+    font-weight: 20;
+    font-style: normal;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+    top: 60px;
+  }
+  p3{
+    font-family: sans-serif;
+    font-weight: 25;
+    font-style: normal;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+    top: 60px;
+  }
+  h1{
+    font-family: "Koulen", sans-serif;
+    font-weight: 20;
+    font-style: normal;
+    color: white;
+    font-size: 50px;
+    text-align: center; 
+    position: relative;
+    top: 60px;
+    padding-top:10%; 
+   
+  }
