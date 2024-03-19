@@ -18,7 +18,7 @@ but help out all the other organisms that your area calls home. Learn more about
   and for that reason, any plantings should be done after consulting with local arborists or ecologists to 
   ensure your safety. Invasive species might not be directly harmful to you, but can do damage to the ecosystem 
   and lead to environmental degradation over time. While some invasive species may be beautiful, their impacts 
-  on our communities are not. Learn more about invasive and noxious species from the Bureau of Land Management  
+  on our communities are not. Learn more about invasive and noxious species from the Bureau of Land Management 
   <a href="https://www.blm.gov/programs/weeds-and-invasives/about">Here! </a> </p5>
     </div>)
   }
