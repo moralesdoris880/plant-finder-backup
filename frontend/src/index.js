@@ -9,6 +9,7 @@ import LearnMore from './pages/LearnMore';
 import ZipCode from './pages/ZipCode';
 import Contact from './pages/Contact';
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 import MeetDevelopers from './pages/MeetDevelopers';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,6 +17,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter> 
     <NavBar/>
+    <Footer/>
     <Routes> 
       <Route exact strict path='/'element={<App />} />
       <Route exact path='/about'element={<About />} />
