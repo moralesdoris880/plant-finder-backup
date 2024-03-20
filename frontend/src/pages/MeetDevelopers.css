@@ -57,3 +57,9 @@ body{
     padding-top:10%;
    
   }
+
+.profile{
+  height: 100px;
+  width: 100px;
+  background-color: aliceblue;
+}
