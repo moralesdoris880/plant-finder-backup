@@ -7,6 +7,7 @@ import "mapbox-gl/dist/mapbox-gl.css";
 function App() {
   return (
     <div className="App">
+      {/* this is a comment */}
       <div id="Map1">
         <SearchBar />
         <Map
