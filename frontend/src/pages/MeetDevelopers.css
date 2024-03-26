@@ -4,7 +4,7 @@ body{
 }
 
 p1{
-  font-family: sans-serif;
+  font-family: "Abel", sans-serif;
   font-weight: 20;
   font-style: normal;
   color: white;
@@ -15,7 +15,7 @@ p1{
  
 }
 p2{
-  font-family: sans-serif;
+  font-family: "Abel", sans-serif;
   font-weight: 20;
   font-style: normal;
   color: white;
@@ -25,7 +25,7 @@ p2{
   top: 60px;
 }
 p3{
-  font-family: sans-serif;
+  font-family: "Abel", sans-serif;
   font-weight: 25;
   font-style: normal;
   color: white;

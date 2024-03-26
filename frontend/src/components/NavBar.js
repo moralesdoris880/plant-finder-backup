@@ -21,9 +21,9 @@ function NavBar() {
             </NavLink>
             <span class="material-symbols-outlined" id="burger" onClick={handleMenu}>{icon}</span>
             <nav style={{display:icon==="menu"? 'none': 'flex'}}>
-                <NavLink to="/about" className="NavLink">About</NavLink>
-                <NavLink to="/learnMore" className="NavLink">Learn More</NavLink>
-                <NavLink to="/zipCode" className="NavLink">Zip Code</NavLink>
+                <NavLink to="/about" className="NavLink">ABOUT</NavLink>
+                <NavLink to="/learnMore" className="NavLink">LEARN MORE</NavLink>
+                <NavLink to="/zipCode" className="NavLink">ZIP CODE</NavLink>
             </nav>
         </div>
     )
