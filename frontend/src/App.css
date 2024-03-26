@@ -1,3 +1,23 @@
+body{
+  height: 100vh;
+}
+
+div.mapboxgl-ctrl-attrib-inner{
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  display: none;
+}
+
+.mapboxgl-ctrl-attrib-button{
+  display: none;
+}
+
+div.mapboxgl-children{
+  display: none;
+  height: 0%;
+}
+
 #NavBar{
   height: 60px;
   width: 100%;
@@ -17,7 +37,7 @@
 }
 
 .App{
-  height: 200vh;
+  height: 100vh;
   background-color: #789065;
 }
 

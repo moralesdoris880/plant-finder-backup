@@ -3,20 +3,16 @@ import {
     Box,
     FooterContainer,
     Column,
-    FooterLink
+    FooterLink,
+    Heading
 } from "./FooterStyles"
 
 const Footer = () => {
     return (
         <Box>
-            <h1 style ={{
-                color: '#BAD9A2',
-                textAlign: 'center',
-                marginTop: '10px'
-            }}
-            >
+            <Heading>
                 Thanks for using PlantFinder!
-            </h1>
+            </Heading>
             <FooterContainer>
                 <Column><FooterLink href='../pages/About'> About </FooterLink> </Column> 
                 <Column> <FooterLink href='../pages/Contact'> Contact </FooterLink></Column>

@@ -17,7 +17,6 @@ root.render(
   <React.StrictMode>
     <BrowserRouter> 
     <NavBar/>
-    <Footer/>
     <Routes> 
       <Route exact strict path='/'element={<App />} />
       <Route exact path='/about'element={<About />} />
@@ -26,6 +25,7 @@ root.render(
       <Route exact path='/about/contact'element={<Contact />} />
       <Route exact path='/about/meetdevelopers'element={<MeetDevelopers />} />
     </Routes>
+    <Footer/>
     </BrowserRouter>
   </React.StrictMode>
 );

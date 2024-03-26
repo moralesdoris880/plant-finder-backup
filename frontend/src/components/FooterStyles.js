@@ -24,7 +24,7 @@ export const Column = styled.div`
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-left: 60px;
+    // margin-left: 60px;
 `;
 
 export const FooterLink = styled.a`
@@ -44,4 +44,5 @@ export const Heading = styled.p`
     color: #E2EB98;
     margin-bottom: 40px;
     font-weight: bold;
+    text-Align: center;
 `;
