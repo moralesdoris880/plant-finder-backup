@@ -5,7 +5,7 @@ body{
 #SearchBar{
   background-color: #789065;
   position: absolute;
-  z-index: 10;
+  z-index: 9;
   width: 280px;
   height: 40px;
   left: 90px;
