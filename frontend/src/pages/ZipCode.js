@@ -1,4 +1,6 @@
 function ZipCode() {
-    return (<div></div>)
+    return (<div>
+      {/* this is a second comment */}
+    </div>)
   }
   export default ZipCode;
