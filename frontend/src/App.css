@@ -29,6 +29,27 @@ div.mapboxgl-children{
   
 }
 
+nav{
+  position: fixed;
+  right: 0;
+  height: 168px;
+  width: 300px;
+  top: 60px;
+  display: flex;
+  flex-direction: column;
+  background-color: #AAB99E;
+  color: white;
+  font-family: "Anton", sans-serif;
+}
+
+.NavLink{
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 #Map1{
   height: 600px;
   width: 100vw;
