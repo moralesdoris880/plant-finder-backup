@@ -1,9 +1,9 @@
 body{
-    height: 200vh;
-    background-color: #789065;
-  }
-  p1{
-    font-family: "Verdana", sans-serif;
+  height: 100vh;
+}
+
+p1{
+  font-family: "Abel", sans-serif;
     font-weight: 20;
     font-style: normal;
     color: white;
@@ -14,7 +14,7 @@ body{
     
   }
   p2{
-    font-family: sans-serif;
+    font-family: "Abel", sans-serif;
     font-weight: 20;
     font-style: normal;
     color: white;
@@ -24,7 +24,7 @@ body{
     top: 60px;
   }
   p3{
-    font-family: sans-serif;
+    font-family: "Abel", sans-serif;
     font-weight: 25;
     font-style: normal;
     color: white;

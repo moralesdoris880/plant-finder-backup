@@ -11,6 +11,9 @@ function Contact() {
             <p1> (xxx) xxx-xxxxx  </p1>
             <br></br>
             <p1> xxxx@gmail.com  </p1>
+            <br></br>
+            <br></br>
+            <br></br>
         </div>
       </div>
       )
