@@ -3,8 +3,8 @@ puts "Begin Seeding...🌱"
 #TestCases
 
 ny = State.create(name: 'New York',zipcode_array: '[11427]')
-queensvillage = ny.zipcodes.create(code_number:11427,state_id:"#{ny.id}")
-# strawberry = Plant.create(common_name:'Strawberry',state_id: ny.id, zipcode_ids:"[#{queensvillage.code_number}]")
+queensvillage = ny.zipcodes.create(code_number:11427,state_id:"#{ny.id}", id:11427)
+# strawberry = Plant.create(common_name:'Strawberry',state_id: ny.id, zipcode_ids:queensvillage.id)
 
 #States
 
