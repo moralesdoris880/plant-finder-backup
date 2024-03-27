@@ -1,14 +1,21 @@
 import '../App.css';
+import { useState } from 'react';
 
 function SearchBar() {
+    const[click,setClick]=useState(true)
+
+    function handleAdvancedFilters(){
+        setClick(!click)
+    }
+
     return(
         <div id="SearchBar">
             <form id="SearchBarInner">
                 <input type="text" placeholder='Enter your Zipcode here' id="Searchbox" style={{fontFamily: "Abel"}}/>
-                <span class="material-symbols-outlined" id="AdvancedFilters">expand_more</span>
+                <span class="material-symbols-outlined" id="AdvancedFilters" onClick={handleAdvancedFilters}>expand_more</span>
                 <span className="material-symbols-outlined" id="searchmag">search</span>
             </form>
-            <form id="AdvancedFiltersQuery">
+            <form id="AdvancedFiltersQuery" style={{display:click?"none":"block"}}>
                     <label style={{fontFamily: "Abel"}}>Plant Name</label><br/>
                     <input type="text"className='AdvancedFilterInputs'/><br/>
                     <label style={{fontFamily: "Abel"}}>Plant Type</label><br/>
