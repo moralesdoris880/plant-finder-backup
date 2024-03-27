@@ -15,11 +15,12 @@ function SearchBar() {
                     <select type="text"className='AdvancedFilterInputs'/><br/>
                     <label style={{fontFamily: "Abel"}}>Ecosystem Services</label><br/>
                     <select type="text" className='AdvancedFilterInputs'/><br/>
-                    <label style={{fontFamily: "Abel"}}>Property Type</label><br/>
+                    <label style={{fontFamily: "Abel", marginBottom:"10px"}}>Property Type</label><br/>
                     <input type='radio'/><label style={{fontFamily: "Abel"}}>Flood-prone</label>
                     <input type='radio'/><label style={{fontFamily: "Abel"}}>Sunlight</label><br/>
                     <input type='radio'/><label style={{fontFamily: "Abel"}}>Shade</label>
-                    <input type='radio'/><label style={{fontFamily: "Abel"}}>Dry</label>
+                    <input type='radio'/><label style={{fontFamily: "Abel"}}>Dry</label><br/>
+                    <input type="submit" value="Apply Filters" id='SearchBarSubmit' style={{marginTop:"10px"}}/>
             </form>
         </div>
     )
