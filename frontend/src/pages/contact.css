@@ -24,4 +24,5 @@ body{
     text-align: center;
     position: relative;
     top: 60px;
+    display: block;
   }

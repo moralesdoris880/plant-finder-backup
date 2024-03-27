@@ -5,12 +5,14 @@ function About() {
   <div >
     <div>
     <img src="/plant.png" alt="plant"  className='plantpot' />
-        <h1> Our Mission </h1>
+        <h1 class='hAbout'> Our Mission </h1>
+        <br></br>
         <p2> The PlantFinder web-program aims to equip its users with the necessary plant information in order to empower them to 
             grow their own plants no matter their geographic or individual circumstances. With readily available, accessible, and 
             consolidated plant indices, users can treat our program as a one-stop shop to guide their planting choices so that everyone 
             can have the tools at their disposal to build a flourishing garden.  </p2>
-        <h1> Our Story </h1>
+            <br></br>
+        <h1 class='hAbout'> Our Story </h1>
         <br></br>
         <p2> The PlantFinder web-program was developed by a group of undergraduate Computer Science students at Hunter College in New York 
             City, who sought to create a web-based program to create an easy-to-use and individually-tailored plant database in response 
@@ -19,8 +21,8 @@ function About() {
             explore native plant species tailored to their geographic location and learn about the ecosystem services they provide, such as 
             clean air, water filtration, carbon sequestration, and biodiversity preservation. PlantFinder also educates users on the importance 
             of planting native species and mitigating the spread of invasive plants.  </p2>
-        
-        <h1> Motivation </h1>
+            <br></br>
+        <h1 class='hAbout'> Motivation </h1>
         <br></br>
         <p2> A history of environmental degradation and lack of environmental education has left many parts of the United States without strong, 
             forested ecosystems, and rendered individuals lacking knowledge on how to repair them. For this program, the developers wanted to 
