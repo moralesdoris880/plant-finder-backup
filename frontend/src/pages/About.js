@@ -4,6 +4,7 @@ function About() {
   return (
   <div >
     <div>
+    <img src="/plant.png" alt="plant"  className='plantpot' />
         <h1> Our Mission </h1>
         <p2> The PlantFinder web-program aims to equip its users with the necessary plant information in order to empower them to 
             grow their own plants no matter their geographic or individual circumstances. With readily available, accessible, and 
