@@ -20,7 +20,7 @@ function MeetDevelopers() {
             <div class="grid-item">
               <img src="/Peter.jpg" alt="Profile"  className='profile'/>          
               <h2> Peter Manos</h2>
-              <p1> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  </p1>
+              <p1> Senior Environmental Studies Major and Computer Science Minor at Hunter College! Currently working as a research assistant studying Forest Ecology at the CUNY Advanced Science Research Center. Loves hiking, gardening, reading, and playing with his dog Molly.  </p1>
             </div>
             <div class="grid-item">
               <img src="/Naia.jpg" alt="Profile"  className='profile'/>          
