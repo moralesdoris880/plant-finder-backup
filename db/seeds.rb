@@ -1,12 +1,18 @@
 puts "Begin Seeding...🌱"
 
-#TestCases
+#TestCase1
 
-ny = State.create(name: 'New York',zipcode_array: '[11427]')
-queensvillage = ny.zipcodes.create(code_number:11427,state_id:"#{ny.id}", id:11427)
-# strawberry = Plant.create(common_name:'Strawberry',state_id: ny.id, zipcode_ids:queensvillage.id)
+ny = State.create(name: 'New York')
+queensvillage = ny.zipcodes.create(code_number: 11427)
+strawberry = Plant.create(common_name:'Strawberry')
+PlantJoin.create(plant:strawberry,zipcode:queensvillage)
 
-#States
+#Iteration for automated State Object Creation ( still figuring out setting variable name with string manipulation )
+# for state in statenames do
+#     state.gsub(/\s+/, "") = State.create(name: state)
+#     puts state
+# end
+
 
 # statenames = ['Alabama','Alaska','American Samoa','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','District of Columbia','Federated States of Micronesia','Florida','Georgia','Guam','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Marshall Islands','Maryland','Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey','New Mexico','New York','North Carolina','North Dakota','Northern Mariana Islands','Ohio','Oklahoma','Oregon','Palau','Pennsylvania','Puerto Rico','Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virgin Island','Virginia','Washington','West Virginia','Wisconsin','Wyoming']
 
