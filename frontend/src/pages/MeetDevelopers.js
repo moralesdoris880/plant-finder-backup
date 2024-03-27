@@ -25,7 +25,7 @@ function MeetDevelopers() {
             <div class="grid-item">
               <img src="/Naia.jpg" alt="Profile"  className='profile'/>          
               <h2> Naia Lehtinen</h2>
-              <p1> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  </p1>
+              <p1> Student at CUNY Hunter College and currently employed Part-time at Compass. My major is in Environmental Studies and I hope to pursue other opportunities through internships, volunteering and working.   </p1>
             </div>
             <div class="grid-item">
               <img src="/profile.png" alt="Profile"  className='profile'/>          
