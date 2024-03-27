@@ -20,6 +20,10 @@ but help out all the other organisms that your area calls home. Learn more about
   and lead to environmental degradation over time. While some invasive species may be beautiful, their impacts 
   on our communities are not. Learn more about invasive and noxious species from the Bureau of Land Management 
   <a href="https://www.blm.gov/programs/weeds-and-invasives/about">Here! </a> </p5>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
     </div>)
   }
   export default LearnMore;
