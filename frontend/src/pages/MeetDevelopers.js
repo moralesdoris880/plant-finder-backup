@@ -15,7 +15,7 @@ function MeetDevelopers() {
             <div class="grid-item">
               <img src="/Doris.jpg" alt="Profile"  className='profile' />          
               <h2> Doris Morales</h2>
-              <p1> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  </p1>
+              <p1> Senior Media Studies Major and Computer Science minor at Hunter College! Previously working as a Solutions Engineer 2 at Datadog and a Flatiron School alumni for Software Engineering. Currently exploring the world of Cybersecurity and Archaeology.</p1>
             </div>
             <div class="grid-item">
               <img src="/Peter.jpg" alt="Profile"  className='profile'/>          
