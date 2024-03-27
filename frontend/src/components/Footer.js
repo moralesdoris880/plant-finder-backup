@@ -10,14 +10,19 @@ import {
 const Footer = () => {
     return (
         <Box>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
             <Heading>
                 Thanks for using PlantFinder!
             </Heading>
+            <img src="/plant.png" alt="plantlogo"  className='Image' height='50px' width='50px' margin= '0 auto'/>
              <FooterContainer>
                 <Column><FooterLink href='../About'> About </FooterLink> </Column> 
                 <Column> <FooterLink href='/About/Contact'> Contact </FooterLink></Column>
                 <Column> <FooterLink href='/About/MeetDevelopers'> Meet the Developers </FooterLink></Column>
-
             </FooterContainer>
         </Box>
     );
