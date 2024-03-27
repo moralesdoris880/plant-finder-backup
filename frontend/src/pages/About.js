@@ -10,6 +10,7 @@ function About() {
             consolidated plant indices, users can treat our program as a one-stop shop to guide their planting choices so that everyone 
             can have the tools at their disposal to build a flourishing garden.  </p1>
         <h1> Our Story </h1>
+        <br></br>
         <p1> The PlantFinder web-program was developed by a group of undergraduate Computer Science students at Hunter College in New York 
             City, who sought to create a web-based program to create an easy-to-use and individually-tailored plant database in response 
             to the growing urgency of climate change. The developers wanted to embark on a project that would support remediation efforts to 
@@ -19,6 +20,7 @@ function About() {
             of planting native species and mitigating the spread of invasive plants.  </p1>
         
         <h1> Motivation </h1>
+        <br></br>
         <p1> A history of environmental degradation and lack of environmental education has left many parts of the United States without strong, 
             forested ecosystems, and rendered individuals lacking knowledge on how to repair them. For this program, the developers wanted to 
             strongly position and propel the notion that plants don’t just look pretty, but also provide significant and impactful <b>ecosystem services</b>. 
@@ -27,14 +29,16 @@ function About() {
             to co-evolve with other species and have mutualistic relationships. On the flip side, a significant threat to environmental health comes 
             from invasive species (which are species introduced to an environment that overpopulate and cause adverse effects). Invasive species are 
             increasingly propagating across North America as a result of global climate change. With PlantFinder, individuals will be able to learn
-             more about the plants native to their location, along with the ecosystem services they provide.   </p1>
-
+             more about the plants native to their location, along with the ecosystem services they provide.  </p1>
         <br></br>
         <br></br>
         <br></br>
         <br></br>
-        <p1>*Ecosystem Services are the benefits that plants give back to the environment</p1>
-
+         <p1>*Ecosystem Services are the benefits that plants give back to the environment</p1>    
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
     </div>
   </div>
   )

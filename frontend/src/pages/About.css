@@ -1,10 +1,9 @@
 body{
-    height: 100vh;
-    background-color: #789065;
-  }
+  height: 100vh;
+}
 
 p1{
-    font-family: "Abel", sans-serif;
+  font-family: "Abel", sans-serif;
     font-weight: 20;
     font-style: normal;
     color: white;
