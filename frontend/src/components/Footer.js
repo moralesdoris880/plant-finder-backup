@@ -15,8 +15,9 @@ const Footer = () => {
             </Heading>
              <FooterContainer>
                 <Column><FooterLink href='../About'> About </FooterLink> </Column> 
-                <Column> <FooterLink href='../About/Contact'> Contact </FooterLink></Column>
-                <Column> <FooterLink href='../About/MeetDevelopers'> Meet the Developers </FooterLink></Column>
+                <Column> <FooterLink href='/About/Contact'> Contact </FooterLink></Column>
+                <Column> <FooterLink href='/About/MeetDevelopers'> Meet the Developers </FooterLink></Column>
+
             </FooterContainer>
         </Box>
     );
