@@ -13,10 +13,10 @@ const Footer = () => {
             <Heading>
                 Thanks for using PlantFinder!
             </Heading>
-            <FooterContainer>
-                <Column><FooterLink href='../pages/About'> About </FooterLink> </Column> 
-                <Column> <FooterLink href='../pages/Contact'> Contact </FooterLink></Column>
-                <Column> <FooterLink href='../pages/MeetDevelopers'> Meet the Developers </FooterLink></Column>
+             <FooterContainer>
+                <Column><FooterLink href='../About'> About </FooterLink> </Column> 
+                <Column> <FooterLink href='../Contact'> Contact </FooterLink></Column>
+                <Column> <FooterLink href='../MeetDevelopers'> Meet the Developers </FooterLink></Column>
             </FooterContainer>
         </Box>
     );
