@@ -11,8 +11,6 @@ class CreatePlants < ActiveRecord::Migration[7.0]
       t.boolean :shade_producing
       t.boolean :shade_tolerant
       t.boolean :wetland_species
-      t.string :zipcode_ids
-      t.string :state_id
       t.timestamps
     end
   end

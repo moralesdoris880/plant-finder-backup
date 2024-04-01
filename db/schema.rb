@@ -10,9 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_03_06_164800) do
+ActiveRecord::Schema[7.0].define(version: 2024_03_27_153259) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "plant_joins", force: :cascade do |t|
+    t.bigint "plant_id"
+    t.bigint "zipcode_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["plant_id", "zipcode_id"], name: "index_plant_joins_on_plant_id_and_zipcode_id", unique: true
+    t.index ["plant_id"], name: "index_plant_joins_on_plant_id"
+    t.index ["zipcode_id"], name: "index_plant_joins_on_zipcode_id"
+  end
 
   create_table "plants", force: :cascade do |t|
     t.string "scientific_name"
@@ -25,24 +35,25 @@ ActiveRecord::Schema[7.0].define(version: 2024_03_06_164800) do
     t.boolean "shade_producing"
     t.boolean "shade_tolerant"
     t.boolean "wetland_species"
-    t.string "zipcode_ids"
-    t.string "state_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "states", force: :cascade do |t|
     t.string "name"
-    t.string "zipcode_array"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "zipcodes", force: :cascade do |t|
     t.integer "code_number"
-    t.string "state_id"
+    t.bigint "state_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["state_id"], name: "index_zipcodes_on_state_id"
   end
 
+  add_foreign_key "plant_joins", "plants"
+  add_foreign_key "plant_joins", "zipcodes"
+  add_foreign_key "zipcodes", "states"
 end
