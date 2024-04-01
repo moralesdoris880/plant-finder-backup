@@ -11,6 +11,7 @@ import Contact from './pages/Contact';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import MeetDevelopers from './pages/MeetDevelopers';
+import Resources from './pages/Resources';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -24,6 +25,7 @@ root.render(
       <Route exact path='/zipCode'element={<ZipCode />} />
       <Route exact path='/about/contact'element={<Contact />} />
       <Route exact path='/about/meetdevelopers'element={<MeetDevelopers />} />
+      <Route exact path='/about/resources'element={<Resources />} />
     </Routes>
     <Footer/>
     </BrowserRouter>
