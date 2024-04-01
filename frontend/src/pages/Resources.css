@@ -1,0 +1,27 @@
+body{
+    height: 100vh;
+    background-color: #789065;
+  }
+  h5{
+    font-family: "Abel", sans-serif;
+    font-weight: 25;
+    font-style: normal;
+    color: white;
+    font-size: 35px;
+    position: relative;
+    top: 50px;
+  }
+
+  a{
+    color: white;
+  }
+    p5{
+      font-family: "Abel", sans-serif;
+      font-weight: 20;
+      font-style: normal;
+      color: white;
+      font-size: 25px;
+      text-align: center;
+      position: relative;
+      top: 50px;
+    }

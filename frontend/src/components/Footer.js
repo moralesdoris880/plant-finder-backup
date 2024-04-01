@@ -22,6 +22,7 @@ const Footer = () => {
                 <FooterLink href='../About'> About </FooterLink>
                 <FooterLink href='/About/Contact'> Contact </FooterLink>
                 <FooterLink href='/About/MeetDevelopers'> Meet the Developers </FooterLink>
+                <FooterLink href='/About/Resources'> Resources </FooterLink>
             </FooterContainer>
         </Box>
     );
