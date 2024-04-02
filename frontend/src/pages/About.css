@@ -2,24 +2,45 @@ body{
   height: 100vh;
 }
 
-.card {
+
+.sidenav {
+  height: 200px;
+  width: 180px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #C0D5AE;
+  overflow-x: hidden;
+  margin-top: 25%;
+  margin-right: 2%;
+  border-radius: 10px;
+}
+
+.sidenavhead {
+  height: 70px;
+  width: 180px;
+  position: fixed;
+  top: 0;
+  right: 0;
   background-color: #456030;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 30%;
+  overflow-x: hidden;
+  margin-top: 25%;
+  margin-right: 2%;
   border-radius: 5px;
 }
-hover {
+
+.sidenav a {
+  padding-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+}
+
+.sidenav a:hover {
   color: green;
-  transition: 200ms ease-in;
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.container {
-  padding: 2px 16px;
 }
 
 .hAbout{
@@ -28,6 +49,7 @@ hover {
   font-style: normal;
   color: white;
   font-size: 50px;
+  width: 70%;
   text-align: center;
   position: relative;
   top: 20px;
@@ -35,19 +57,21 @@ hover {
 }
 
 h6{
+  padding-top: 5%;
   font-family: "Koulen", sans-serif;
+  text-align: center;
   font-weight: 20;
   font-style: normal;
   color: white;
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
   position: relative;
-  top: 10px;
 }
 
   p2{
     font-family: "Abel", sans-serif;
     font-weight: 20;
+    width: 70%;
     font-style: normal;
     color: white;
     font-size: 25px;
@@ -61,7 +85,7 @@ h6{
     font-family: "Abel", sans-serif;
     font-weight: 20;
     font-style: normal;
-    color: white;
+    color: #4F534C;
     font-size: 15px;
     text-align: center;
     position: relative;
@@ -72,6 +96,7 @@ h6{
 
   .plantpot{
     padding-top:10%; 
+    padding-right:30%;
     height: 100px;
     width: 100px;
     display: block;
