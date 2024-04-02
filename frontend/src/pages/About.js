@@ -4,20 +4,19 @@ function About() {
   return (
   <div >
     <div>
-    <img src="/plant.png" alt="plant"  className='plantpot' />
-    <div class="card">
-        <div class="container">
-          <h6><b>More About Plantfinder</b></h6> 
-          <br></br>
-          <br></br>
-          <p7><a href='/About/MeetDevelopers'> Developers </a></p7> 
-          <br></br>
-          <p7> <a href='/About/Resources'>Helpful Resources</a></p7> 
-          <br></br>
-          <p7> <a href='/About/Contact'>Contact Us </a></p7> 
-          <br></br>
-          <br></br>
-  </div>
+    <img src="/plant.png" alt="plant"  className='plantpot' />         
+  <div class="sidenav">
+    <br/>
+    <br/>
+    <br/>
+    <div class="sidenavhead">
+    <h6><b>More About Plantfinder</b></h6>
+    </div>
+    <br/>
+    <br/>
+    <p7><a href='/About/MeetDevelopers'> Developers </a></p7> 
+    <p7> <a href='/About/Resources'>Helpful Resources</a></p7> 
+    <p7> <a href='/About/Contact'>Contact Us </a></p7> 
 </div>
         <h1 class='hAbout'> Our Mission </h1>
         <br></br>
