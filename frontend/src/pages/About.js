@@ -5,6 +5,20 @@ function About() {
   <div >
     <div>
     <img src="/plant.png" alt="plant"  className='plantpot' />
+    <div class="card">
+        <div class="container">
+          <h6><b>More About Plantfinder</b></h6> 
+          <br></br>
+          <br></br>
+          <p7><a href='/About/MeetDevelopers'> Developers </a></p7> 
+          <br></br>
+          <p7> <a href='/About/Resources'>Helpful Resources</a></p7> 
+          <br></br>
+          <p7> <a href='/About/Contact'>Contact Us </a></p7> 
+          <br></br>
+          <br></br>
+  </div>
+</div>
         <h1 class='hAbout'> Our Mission </h1>
         <br></br>
         <p2> The PlantFinder web-program aims to equip its users with the necessary plant information in order to empower them to 
