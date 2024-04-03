@@ -7,7 +7,7 @@ body{
   height: 200px;
   width: 180px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   background-color: #C0D5AE;
@@ -20,13 +20,11 @@ body{
 .sidenavhead {
   height: 70px;
   width: 180px;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   background-color: #456030;
   overflow-x: hidden;
-  margin-top: 25%;
-  margin-right: 2%;
   border-radius: 5px;
 }
 
