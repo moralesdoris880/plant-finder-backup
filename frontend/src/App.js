@@ -14,9 +14,9 @@ function App() {
         mapLib={import('mapbox-gl')}
         mapboxAccessToken="pk.eyJ1IjoibW9yYWxlc2RvcmlzODgwIiwiYSI6ImNsdThoeGwxczBod2wyaHBiZnljazd0eXgifQ.F-FdW2qZVJrZZK8J3vI9xA"
         initialViewState={{
-          longitude: -100,
-          latitude: 40,
-          zoom: 4.0
+          longitude: -76,
+          latitude: 42.7,
+          zoom: 6.0
         }}
         mapStyle="mapbox://styles/moralesdoris880/cltox55sx01rl01qp8w1308hu"
         />;
