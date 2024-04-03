@@ -19,7 +19,7 @@ function NavBar() {
             <NavLink to="/">
             <h4 id="Logo">PLANTFINDER</h4>
             </NavLink>
-            <span class="material-symbols-outlined" id="burger" onClick={handleMenu}>{icon}</span>
+            <span className="material-symbols-outlined" id="burger" onClick={handleMenu}>{icon}</span>
             <nav style={{display:icon==="menu"? 'none': 'flex'}}>
                 <NavLink to="/about" className="NavLink">ABOUT</NavLink>
                 <NavLink to="/learnMore" className="NavLink">LEARN MORE</NavLink>

@@ -2,6 +2,16 @@ body{
   height: 100vh;
 }
 
+#searchmagsubmit{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: transparent;
+  width: 50px;
+  height: 40px;
+  border: none;
+}
+
 #SearchBarSubmit{
   border: none;
   font-family: "Abel", sans-serif;
