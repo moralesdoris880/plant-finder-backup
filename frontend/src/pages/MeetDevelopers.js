@@ -30,7 +30,7 @@ function MeetDevelopers() {
             <div class="grid-item">
               <img src="/profile.png" alt="Profile"  className='profile'/>          
               <h2> Daniela Urbano</h2>
-              <p1> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  </p1>
+              <p1>  Accounting major with a minor in Computer Science alongside the Certificate in Business Studies at CUNY Hunter College. My current hobbies include journaling, biking, and gardening.  </p1>
             </div>
             <br></br>
           <br></br>
