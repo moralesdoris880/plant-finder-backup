@@ -1,6 +1,6 @@
+import Card from "./Card.jsx";
+import "./ZipCode.css";
 function ZipCode() {
-    return (<div>
-      {/* this is a second comment */}
-    </div>)
-  }
-  export default ZipCode;
+  return <Card></Card>;
+}
+export default ZipCode;
