@@ -18,6 +18,7 @@ function NavBar() {
         <div id="NavBar">
             <NavLink to="/">
             <h4 id="Logo">PLANTFINDER</h4>
+            <img src="/plant.png" alt="plantlogo"  className='navplant' height='40px' width='40px' margin= '0 auto' />
             </NavLink>
             <span className="material-symbols-outlined" id="burger" onClick={handleMenu}>{icon}</span>
             <nav style={{display:icon==="menu"? 'none': 'flex'}}>
