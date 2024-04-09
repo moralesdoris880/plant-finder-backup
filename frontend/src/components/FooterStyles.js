@@ -34,7 +34,7 @@ export const FooterLink = styled.a`
     color: #E2EB99;
     margin-bottom: 20 px;
     font-size: 18px;
-    font-family: sans-serif;
+    font-family:"Abel", sans-serif;
     text-decoration: none;
     
     &:hover {
@@ -48,6 +48,5 @@ export const Heading = styled.p`
     font-family: "Koulen", sans-serif;
     color: #E2EB98;
     text-align: center;
-    margin-bottom: 40px;
-    font-weight: bold;
+    margin-bottom: 5px;
 `;

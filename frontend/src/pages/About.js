@@ -12,7 +12,7 @@ function About() {
     <div class="sidenavhead">
     <h6><b>More About Plantfinder</b></h6>
     </div>
-    <br/>
+    <div class="sidenavbridgewhite"/>
     <br/>
     <p7><a href='/About/MeetDevelopers'> Developers </a></p7> 
     <p7> <a href='/About/Resources'>Helpful Resources</a></p7> 
@@ -24,7 +24,6 @@ function About() {
             grow their own plants no matter their geographic or individual circumstances. With readily available, accessible, and 
             consolidated plant indices, users can treat our program as a one-stop shop to guide their planting choices so that everyone 
             can have the tools at their disposal to build a flourishing garden.  </p2>
-            <br></br>
         <h1 class='hAbout'> Our Story </h1>
         <br></br>
         <p2> The PlantFinder web-program was developed by a group of undergraduate Computer Science students at Hunter College in New York 
@@ -34,7 +33,6 @@ function About() {
             explore native plant species tailored to their geographic location and learn about the ecosystem services they provide, such as 
             clean air, water filtration, carbon sequestration, and biodiversity preservation. PlantFinder also educates users on the importance 
             of planting native species and mitigating the spread of invasive plants.  </p2>
-            <br></br>
         <h1 class='hAbout'> Motivation </h1>
         <br></br>
         <p2> A history of environmental degradation and lack of environmental education has left many parts of the United States without strong, 
@@ -50,7 +48,7 @@ function About() {
         <br></br>
         <br></br>
         <br></br>
-         <p1>*Ecosystem Services are the benefits that plants give back to the environment</p1>    
+         <p3>*Ecosystem Services are the benefits that plants give back to the environment</p3>    
         <br></br>
         <br></br>
         <br></br>
