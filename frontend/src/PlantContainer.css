@@ -1,0 +1,18 @@
+#plantcontainerbox{
+    background-color: #789065;
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    top: 50px;
+    right: 100px;
+}
+
+#searchtitle{
+    font-size: 18px;
+    position: relative;
+    top: 0;
+    margin: 0;
+    padding: 10px;
+    left: 10px;
+    text-align: start;
+}

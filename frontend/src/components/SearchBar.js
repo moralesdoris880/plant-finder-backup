@@ -1,7 +1,7 @@
 import '../App.css';
 import { useState } from 'react';
 
-function SearchBar() {
+function SearchBar(setFips) {
     const[click,setClick]=useState(true);
     const[searchQuery,setSearchQuery]=useState("");
 
@@ -16,7 +16,7 @@ function SearchBar() {
                 }
         }).then((response) => {
             if (response.ok) {
-              console.log(response.json().then((data) => console.log(data.Data[0].StateFIPS)))
+              console.log(response.json().then((data) => setFips(data.Data[0].StateFIPS)))
             } else {
               response.json().then(() => console.log("Message could not be sent"));
             }
