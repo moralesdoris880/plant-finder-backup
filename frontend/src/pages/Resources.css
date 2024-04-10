@@ -12,6 +12,19 @@ body{
     top: 50px;
   }
 
+  h11{
+    font-family: "Koulen", sans-serif;
+    font-weight: 25;
+    font-style: normal;
+    color: white;
+    font-size: 55px;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    display: block;
+    padding-bottom: 50px;
+  }
+
   a{
     color: white;
     text-decoration: none;
