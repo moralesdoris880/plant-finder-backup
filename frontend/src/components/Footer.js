@@ -16,7 +16,9 @@ const Footer = () => {
             <br></br>
             <Heading>
                 Thanks for using PlantFinder! <br /> 
-                <img src="/plant.png" alt="plantlogo"  className='plant' height='50px' width='50px' margin= '0 auto'/>
+                <FooterLink href="/">
+                <img  href="/" src="/plant.png" alt="plantlogo"  className='plant' height='50px' width='50px' margin= '0 auto'/>
+                </FooterLink>
             </Heading>
              <FooterContainer>
                 <FooterLink href='../About'> About </FooterLink>
