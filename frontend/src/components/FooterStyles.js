@@ -50,3 +50,4 @@ export const Heading = styled.p`
     text-align: center;
     margin-bottom: 5px;
 `;
+
