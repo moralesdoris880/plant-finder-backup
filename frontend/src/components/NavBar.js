@@ -6,14 +6,13 @@ import {useState} from "react";
 function NavBar() {
     const[click,setClick]=useState(true)
     const[icon,setIcon]=useState("menu")
+
+
     function handleMenu() {
         setClick(!click)
-        if(click===false) {
-            setIcon("close");}
-        else if(click===true){
-            setIcon("menu");
-        }
+        setIcon(click ? "menu": "close")
     }
+   
     return(
         <div id="NavBar">
             <NavLink to="/">
@@ -24,7 +23,6 @@ function NavBar() {
             <nav style={{display:icon==="menu"? 'none': 'flex'}}>
                 <NavLink to="/about" className="NavLink">ABOUT</NavLink>
                 <NavLink to="/learnMore" className="NavLink">LEARN MORE</NavLink>
-                <NavLink to="/zipCode" className="NavLink">ZIP CODE</NavLink>
             </nav>
         </div>
     )

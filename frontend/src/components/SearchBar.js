@@ -1,7 +1,7 @@
 import '../App.css';
 import { useState } from 'react';
 
-function SearchBar(setFips) {
+function SearchBar({setFips}) {
     const[click,setClick]=useState(true);
     const[searchQuery,setSearchQuery]=useState("");
 
@@ -10,13 +10,13 @@ function SearchBar(setFips) {
         fetch(`https://us-zip-code-lookup.p.rapidapi.com/getZip?zip=${searchQuery}`, { 
                 method: "GET",
                 headers: {
-                  'X-RapidAPI-Key': 'cc351ed302msh2ab889e8473ead7p119413jsn32ee26f0532a',
+                  'X-RapidAPI-Key': process.env.REACT_APP_KEY,
                   'X-RapidAPI-Host': 'us-zip-code-lookup.p.rapidapi.com',
                   "Content-Type": "application/json",
                 }
         }).then((response) => {
             if (response.ok) {
-              console.log(response.json().then((data) => setFips(data.Data[0].StateFIPS)))
+              response.json().then((data) => setFips(data.Data[0].StateFIPS))
             } else {
               response.json().then(() => console.log("Message could not be sent"));
             }
