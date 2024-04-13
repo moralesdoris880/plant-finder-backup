@@ -9,11 +9,6 @@ import {
 const Footer = () => {
     return (
         <Box>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
             <Heading>
                 Thanks for using PlantFinder! <br /> 
                 <FooterLink href="/">

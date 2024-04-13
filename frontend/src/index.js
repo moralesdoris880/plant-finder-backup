@@ -6,10 +6,9 @@ import About from './pages/About';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LearnMore from './pages/LearnMore';
-import ZipCode from './pages/ZipCode';
 import Contact from './pages/Contact';
 import NavBar from './components/NavBar';
-import Footer from './components/Footer';
+
 import MeetDevelopers from './pages/MeetDevelopers';
 import Resources from './pages/Resources';
 
@@ -21,12 +20,10 @@ root.render(
       <Route exact strict path='/'element={<App />} />
       <Route exact path='/about'element={<About />} />
       <Route exact path='/learnMore'element={<LearnMore />} />
-      <Route exact path='/zipCode'element={<ZipCode />} />
       <Route exact path='/about/contact'element={<Contact />} />
       <Route exact path='/about/meetdevelopers'element={<MeetDevelopers />} />
       <Route exact path='/about/resources'element={<Resources />} />
     </Routes>
-    <Footer/>
     </BrowserRouter>
 );
 
