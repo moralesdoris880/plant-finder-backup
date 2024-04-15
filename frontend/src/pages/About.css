@@ -142,8 +142,6 @@ h6{
 
     .navplant{
       filter: brightness(0) invert(1);
-      position: absolute;
-      left: -200;
-      margin-right: 20%;
-      top: 5px;
+      position: relative;
+      top: 1px;
       }

@@ -30,8 +30,8 @@ function SearchBar({setFips}) {
     return(
         <div id="SearchBar">
             <form id="SearchBarInner" onSubmit={(e)=>ZipcodetoFIPSConversion(e,searchQuery)}>
-                <input type="text" placeholder='Enter your Zipcode here' id="Searchbox" style={{fontFamily: "Abel"}} onChange={(e)=>setSearchQuery(e.target.value)}/>
-                <span className="material-symbols-outlined" id="AdvancedFilters" onClick={handleAdvancedFilters}>expand_more</span>
+                <input type="text" placeholder='  Enter your Zipcode here' id="Searchbox" style={{fontFamily: "Abel"}} onChange={(e)=>setSearchQuery(e.target.value)}/>
+                {/* <span className="material-symbols-outlined" id="AdvancedFilters" onClick={handleAdvancedFilters}>expand_more</span> */}
                 <div>
                     <span className="material-symbols-outlined" id="searchmag">search</span>
                     <input type="submit" value=""  id="searchmagsubmit"></input>

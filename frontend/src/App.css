@@ -1,3 +1,27 @@
+body{
+  overflow-y: scroll;
+  background-color: #FAFAFA;
+}
+
+#motto{
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #1A2B28;
+  font-style: italic;
+  font-size: 48px;
+  text-align: center;
+  position: relative;
+  top: 150px;
+}
+
+#Map2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  filter:drop-shadow(5px 5px 5px grey);
+}
+
 #searchmagsubmit{
   position: absolute;
   top: 0px;
@@ -6,6 +30,19 @@
   width: 50px;
   height: 40px;
   border: none;
+}
+
+#startimg{
+  background-image: url(../public/isaacmartinwallpaper.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.test{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 #SearchBarSubmit{
@@ -43,34 +80,36 @@
 }
 
 #SearchBar{
-  background-color: #789065;
   position: absolute;
   z-index: 9;
   width: 290px;
   height: 40px;
-  left: 90px;
-  top: 50px;
+  left: 42%;
+  margin-top: 250px;
 }
 
 #SearchBarInner{
-  background-color: #789065;
+  background-color: transparent;
   width: 290px;
   height: 40px;
 }
 
 #searchmag{
   position: absolute;
-  top: 8px;
-  right: 10px;
+  top: 15px;
+  right: 55px;
   font-size: 22px;
 }
 
 #Searchbox{
-  height: 24px;
+  height: 35px;
   width: 230px;
   margin-left: 5px;
   margin-top: 5px;
   margin-bottom: 3px;
+  border-radius: 15px;
+  border-color: transparent;
+  filter:drop-shadow(5px 5px 5px grey);
 }
 
 div.mapboxgl-ctrl-attrib-inner{
@@ -92,12 +131,12 @@ div.mapboxgl-children{
 #NavBar{
   height: 60px;
   width: 100%;
-  background-color: #AAB99E;
+  background-color: #FAFAFA;
   position: fixed;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   z-index:10;
+  justify-content: right;
 }
 
 nav{
@@ -125,29 +164,29 @@ nav{
 }
 
 #Map1{
-  height: 600px;
+  height: 200vh;
   width: 100vw;
   position:relative;
-  top: 60px;
 }
-
+/* 
 .App{
   background-color: #789065;
-}
+} */
 
 #Logo{
-  font-family: "Koulen", sans-serif;
-  font-weight: 400;
+  font-family: "Raleway", serif;
+  font-weight: 800;
   font-style: normal;
-  color: white;
-  font-size: 32px;
+  color: #1A2B28;
+  font-size: 40px;
   padding: 12px;
-  width: 135px;
-  float: left;
+  width: 350px;
+  margin-left: 10%;
+  text-shadow: 3px 3px #ADBF97;
 }
 
 #burger{
-  color: white;
+  color: #1A2B28;
   font-size: 44px;
   padding: 5px;
   float:right;
