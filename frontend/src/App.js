@@ -13,6 +13,7 @@ function App() {
   const[ fiveplantslist, setFiveplantslist ] = useState([]);
   const[ fips, setFips ] = useState(0);
   const[ coordinates, setCoordinates ] = useState(null);
+  const[searchQuery,setSearchQuery]=useState("");
   const[ viewState, setViewState ] = useState({
     longitude: -76,
     latitude: 42.7,
@@ -44,7 +45,7 @@ function App() {
   return (
     <div className="App">
       <div id="Map1">
-        <SearchBar setFips={setFips} setCoordinates={setCoordinates} />
+        <SearchBar setFips={setFips} setCoordinates={setCoordinates} searchQuery={searchQuery} setSearchQuery={setSearchQuery}/>
         <p id="motto">Find your native plants!</p>
         <div id="startimg"/>
         <div id="Map2">
@@ -59,7 +60,7 @@ function App() {
             position: 'relative'
           }}
           />;
-          <PlantContainer fiveplantslist={fiveplantslist}/>
+          <PlantContainer fiveplantslist={fiveplantslist} searchQuery={searchQuery}/>
         </div>
         <ZipCode plantList={plantList}/>
         <Footer/>

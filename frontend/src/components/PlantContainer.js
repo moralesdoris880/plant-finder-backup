@@ -1,9 +1,9 @@
 import "../PlantContainer.css"
 
-function PlantContainer({fiveplantslist}){
+function PlantContainer({fiveplantslist, searchQuery}){
     return(
         <div id="plantcontainerbox">
-            <h1 id="searchtitle">Search Results for{}{}</h1>
+            <h1 id="searchtitle">Search Results for {searchQuery}</h1>
             <div id="plantcontainerlist">
             {fiveplantslist.length > 0  ? fiveplantslist.map((plant)=>{
                 return(
@@ -15,9 +15,13 @@ function PlantContainer({fiveplantslist}){
                         <p className="plantsymbol">Symbol: {plant.symbol}</p>
                     </div>
                 </div>)
-            }):null}
+            }):<div>
+                    <h1 id="noresults">No Results found!</h1>
+                    <p id="tryagain">Please try again</p>
+                </div>
+            }
             </div>
-            <button><span class="material-symbols-outlined">expand_more</span></button>
+            <button id="more"><span class="material-symbols-outlined" style={{color:"#28180E",fontSize:"32px"}}>expand_more</span></button>
         </div>
     )
 }

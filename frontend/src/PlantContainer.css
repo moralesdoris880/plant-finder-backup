@@ -6,6 +6,29 @@
     left: -5px;
 }
 
+#noresults{
+    text-shadow: none;
+    font-size: 32px;
+
+}
+
+#tryagain{
+    font-size: 18px;
+    text-align: center;
+    color: #28180E;
+    text-shadow: none;
+    font-family: "Abel", sans-serif;
+    margin-top: 10px;
+}
+
+#more{
+    border:none;
+    background-color: transparent;
+    position: relative;
+    left: 43%;
+    bottom: 0;
+}
+
 #plantcontainerlist{
     display: flex;
     flex-direction: column;

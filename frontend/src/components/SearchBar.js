@@ -1,9 +1,8 @@
 import '../App.css';
 import { useState } from 'react';
 
-function SearchBar({setFips}) {
+function SearchBar({setFips, searchQuery, setSearchQuery}) {
     const[click,setClick]=useState(true);
-    const[searchQuery,setSearchQuery]=useState("");
 
     function ZipcodetoFIPSConversion(e,searchQuery){
         e.preventDefault();	     
