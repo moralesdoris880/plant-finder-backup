@@ -17,7 +17,7 @@ function NavBar() {
         <div id="NavBar">
             <div className='test'>
                 <NavLink to="/">
-                <h4 id="Logo"><img src="/plant.png" alt="plantlogo" className='navplant' height='30px' width='30px' />PLANT FINDER</h4>
+                <h4 id="Logo">PLANT FINDER</h4>
                 </NavLink>
             </div>
             <span className="material-symbols-outlined" id="burger" onClick={handleMenu}>{icon}</span>

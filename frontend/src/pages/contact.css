@@ -3,19 +3,19 @@ body{
   background-color: #789065;
 }
 
-  h1{
-    font-family: "Koulen", sans-serif;
-    font-weight: 20;
-    font-style: normal;
-    color: white;
-    font-size: 50px;
-    text-align: center;
-    position: relative;
-    top: 60px;
-  
-  }  
+h1{
+  font-family: "Raleway", serif;
+  font-weight: 800;
+  font-style: normal;
+  color: #1A2B28;
+  font-size: 40px;
+  width: 350px;
+  text-align: center;
+  position: relative;
+  text-shadow: 3px 3px #ADBF97;
+}   
   p1{
-    font-family: sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 20;
     font-style: normal;
     color: white;
