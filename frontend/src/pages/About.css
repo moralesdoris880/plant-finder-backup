@@ -37,7 +37,7 @@ body{
   right: 0;
   background-color: white;
   border: 5px solid rgb(60, 74, 58);
-  box-shadow: inset 0px 0px 0px 5px #ADBF97;
+  box-shadow: inset 0px 0px 5px 1px rgb(60, 74, 58);
   overflow-x: hidden;
   align-self: center;
 }
