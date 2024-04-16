@@ -42,13 +42,13 @@ body{
 }
 
 #searchmagsubmit{
-  position: absolute;
-  top: 0px;
-  right: 0px;
   background-color: transparent;
   width: 50px;
   height: 40px;
   border: none;
+  position: absolute;
+  top: 6px;
+  right: 45px;
 }
 
 #startimg{
