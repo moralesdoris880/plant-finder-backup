@@ -16,7 +16,9 @@ function SearchBar({setFips}) {
                 }
         }).then((response) => {
             if (response.ok) {
-              response.json().then((data) => setFips(data.Data[0].StateFIPS))
+              response.json().then((data) => {
+                console.log(data)
+                setFips(data.Data[0].StateFIPS)})
             } else {
               response.json().then(() => console.log("Message could not be sent"));
             }

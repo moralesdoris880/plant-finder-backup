@@ -1,10 +1,15 @@
 #plantcontainerbox{
-    /* background-color: #789065; */
-    background-color: aqua;
+    background-color: #D3C9CB;
     width: 400px;
     height: 600px;
     position: relative;
     left: -5px;
+}
+
+#plantcontainerlist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #searchtitle{
@@ -15,4 +20,58 @@
     padding: 10px;
     left: 10px;
     text-align: start;
+    color: #28180E;
+    text-shadow: none;
+    font-family: "Abel", sans-serif;
+}
+
+.plantdetailbox{
+    width: 350px;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    margin: 8px;
+}
+
+.plantimage{
+    width: 110px;
+    height: 110px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.plantcontent{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.planttitle{
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 10px;
+  top: 0;
+  text-shadow: none;
+  width: 100%;
+  font-family: "Koulen", sans-serif;
+    text-align: center;
+    font-weight: 20;
+    font-style: normal;
+    color: #1A2B28;
+    text-align: left;
+}
+
+.plantsn{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-family: "Abel", sans-serif;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.plantsymbol{
+    font-family: "Abel", sans-serif;
+    margin-left: 10px;
 }

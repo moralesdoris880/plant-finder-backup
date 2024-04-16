@@ -4,15 +4,15 @@ function PlantContainer({fiveplantslist}){
     return(
         <div id="plantcontainerbox">
             <h1 id="searchtitle">Search Results for{}{}</h1>
-            <div>
+            <div id="plantcontainerlist">
             {fiveplantslist.length > 0  ? fiveplantslist.map((plant)=>{
                 return(
-                <div>
-                    {/* <img /> */}
-                    <div>
-                        <h1>{plant.common_name}</h1>
-                        <p>Scientific Name:{plant.scientific_name}</p>
-                        <p>{plant.symbol}</p>
+                <div className="plantdetailbox">
+                    <img className="plantimage" src="./imagenotfound.jpeg"/>
+                    <div className="plantcontent">
+                        <h1 className="planttitle">{plant.common_name}</h1>
+                        <p className="plantsn">Scientific Name: {plant.scientific_name}</p>
+                        <p className="plantsymbol">Symbol: {plant.symbol}</p>
                     </div>
                 </div>)
             }):null}

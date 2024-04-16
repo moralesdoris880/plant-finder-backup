@@ -20,7 +20,7 @@ function App() {
   })
 
   useEffect(()=> {
-    fetch(`https://plants10.p.rapidapi.com/plants/states?fips_code=US${fips}&limit=8`, { 
+    fetch(`https://plants10.p.rapidapi.com/plants/states?fips_code=US${fips}&details?&limit=8`, { 
                 method: "GET",
                 headers: {
                   'X-RapidAPI-Key': process.env.REACT_APP_KEY,
@@ -32,6 +32,7 @@ function App() {
               response.json().then((data) => {
                 console.log(data)
                 setPlantList(data.data)
+                console.log(plantList)
                 setFiveplantslist(data.data.slice(0,4))
               })
             } else {

@@ -20,6 +20,7 @@ body{
   flex-direction: row;
   justify-content: center;
   filter:drop-shadow(5px 5px 5px grey);
+  background-color: transparent;
 }
 
 #searchmagsubmit{
@@ -169,10 +170,10 @@ nav{
   width: 100vw;
   position:relative;
 }
-/* 
+
 .App{
-  background-color: #789065;
-} */
+  background-color: #FAFAFA;;
+}
 
 #Logo{
   font-family: "Raleway", serif;
