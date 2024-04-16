@@ -10,7 +10,7 @@ import ZipCode from './pages/ZipCode';
 
 function App() {
   const[ plantList, setPlantList ] = useState([]);
-  const[ fiveplantslist, setFiveplantslist ] = useState(null);
+  const[ fiveplantslist, setFiveplantslist ] = useState([]);
   const[ fips, setFips ] = useState(0);
   const[ coordinates, setCoordinates ] = useState(null);
   const[ viewState, setViewState ] = useState({
@@ -19,24 +19,26 @@ function App() {
     zoom: 6.0
   })
 
-  // useEffect(()=> {
-  //   fetch(`https://plants10.p.rapidapi.com/plants/states?fips_code=US${fips}&limit=8`, { 
-  //               method: "GET",
-  //               headers: {
-  //                 'X-RapidAPI-Key': process.env.REACT_APP_KEY,
-  //                 'X-RapidAPI-Host': 'plants10.p.rapidapi.com',
-  //                 "Content-Type": "application/json",
-  //               }
-  //       }).then((response) => {
-  //           if (response.ok) {
-  //             response.json().then((data) => {
-  //               console.log(data)
-  //               setPlantList(data.data)})
-  //           } else {
-  //             response.json().then(() => console.log("Message could not be sent"));
-  //           }
-  //         })
-  // }, [fips]);
+  useEffect(()=> {
+    fetch(`https://plants10.p.rapidapi.com/plants/states?fips_code=US${fips}&limit=8`, { 
+                method: "GET",
+                headers: {
+                  'X-RapidAPI-Key': process.env.REACT_APP_KEY,
+                  'X-RapidAPI-Host': 'plants10.p.rapidapi.com',
+                  "Content-Type": "application/json",
+                }
+        }).then((response) => {
+            if (response.ok) {
+              response.json().then((data) => {
+                console.log(data)
+                setPlantList(data.data)
+                setFiveplantslist(data.data.slice(0,4))
+              })
+            } else {
+              response.json().then(() => console.log("Message could not be sent"));
+            }
+          })
+  }, [fips]);
 
   return (
     <div className="App">
