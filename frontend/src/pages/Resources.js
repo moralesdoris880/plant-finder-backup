@@ -4,7 +4,7 @@ function Resources() {
   return (
   <div >
     <div>
-        <h11> Helpful Resources: </h11>
+        <h11> HELPFUL RESOURCES </h11>
         <br/>
         <br/>
         <br/>
