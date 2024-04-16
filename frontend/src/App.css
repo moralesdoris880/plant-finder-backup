@@ -3,6 +3,24 @@ body{
   background-color: #FAFAFA;
 }
 
+#pfooter{
+  text-shadow: none;
+  color: #1A2B28;
+}
+
+#hfooter{
+  font-family: "Raleway", serif;
+  font-weight: 800;
+  font-style: normal;
+  color: #1A2B28;
+  font-size: 40px;
+  padding: 12px;
+  text-shadow: 3px 3px #ADBF97;
+  position: relative;
+  top: 0;
+  text-align: left;
+}
+
 #motto{
   font-family: "Playfair Display", serif;
   font-weight: 400;

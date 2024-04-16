@@ -5,12 +5,15 @@ import {
     FooterLink,
     Heading
 } from "./FooterStyles"
+import '../App.css'
 
 const Footer = () => {
     return (
         <Box>
             <Heading>
-                Thanks for using PlantFinder! <br /> 
+                <p id="pfooter">Thanks for using</p>
+                <h1 id="hfooter">PLANT FINDER</h1>
+                <br /> 
                 <FooterLink href="/">
                 <img  href="/" src="/plant.png" alt="plantlogo"  className='plant' height='50px' width='50px' margin= '0 auto'/>
                 </FooterLink>

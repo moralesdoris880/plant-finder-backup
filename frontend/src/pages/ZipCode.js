@@ -3,7 +3,7 @@ import "./ZipCode.css";
 function ZipCode({plantList}) {
   return (
     <div id="CardContainer">
-      <h1 className="CardHeader">Native Plants in Your Area Include </h1>
+      {plantList.length > 0  ? <h1 className="CardHeader">Native Plants in Your Area</h1>: null }
       <div className="CardSet">
         {plantList.length > 0  ? plantList.map((plant)=>{ 
           return(

@@ -11,7 +11,10 @@
 
 .CardHeader {
   padding: 10px 0px;
-  top: 0px
+  top: 0px;
+  margin-top: 50px;
+  width: 100vw;
+  text-shadow: none;
 }
 
 .Card {
