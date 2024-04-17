@@ -12,7 +12,7 @@ body{
   top: 0;
   right: 0;
   background-color: white;
-  border: 5px solid rgb(60, 74, 58);
+  border: 5px solid rgb(71, 117, 65);
   overflow-x: hidden;
   margin-top: 150px;
   margin-right: 2%;
@@ -30,13 +30,13 @@ body{
 }
 
 .sidenavhead {
-  height: 60px;
-  width: 171px;
+  height: 65px;
+  width: 180px;
   position: absolute;
   top: 0;
   right: 0;
-  background-color: white;
-  border: 5px solid rgb(60, 74, 58);
+  background-color: black;
+  /* border: 5px solid rgb(60, 74, 58); */
   box-shadow: inset 0px 0px 5px 1px rgb(60, 74, 58);
   overflow-x: hidden;
   align-self: center;
@@ -76,12 +76,12 @@ h6{
   font-family: "Raleway", sans-serif;
   text-align: center;
   font-style: normal;
-  color: black;
-  font-size: 23px;
+  color: white;
+  font-size: 20px;
   font-weight: 700;
   text-align: center;
   position: relative;
-  text-shadow: 2px 2px #ADBF97;
+  text-shadow: 1px 1px #93b767;
 }
 
   p2{
@@ -122,7 +122,7 @@ h6{
     text-align: center;
     font-style: italic;
     position: relative;
-    top: 13px;
+    top: 10px;
     bottom: 30px;
     display: block;
   }

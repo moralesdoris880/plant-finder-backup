@@ -10,7 +10,7 @@ function About() {
     <br/>
     <br/>
     <div class="sidenavhead">
-    <h6><b>More About Plantfinder</b></h6>
+    <h6><b>MORE ABOUT PLANTFINDER</b></h6>
     </div>
     <div class="sidenavbridgewhite"/>
     <br/>
