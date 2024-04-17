@@ -35,7 +35,7 @@ function PlantContainer({fiveplantslist, searchQuery}){
                 </div>
             }
             </div>
-            <button id="more"><span class="material-symbols-outlined" style={{color:"#28180E",fontSize:"32px"}}>expand_more</span></button>
+            <button id="more"><span className="material-symbols-outlined" style={{color:"#28180E",fontSize:"32px"}}>expand_more</span></button>
         </div>
     )
 }

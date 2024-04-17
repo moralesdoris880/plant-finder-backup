@@ -1,5 +1,6 @@
 import * as React from 'react';
-import Map from 'react-map-gl';
+import Map, { Layer } from 'react-map-gl';
+import { FillLayer } from 'react-map-gl';
 import './App.css';
 import SearchBar from './components/SearchBar';
 import "mapbox-gl/dist/mapbox-gl.css";
@@ -12,52 +13,66 @@ function App() {
   const[ plantList, setPlantList ] = useState([]);
   const[ fiveplantslist, setFiveplantslist ] = useState([]);
   const[ fips, setFips ] = useState(0);
-  const[ coordinates, setCoordinates ] = useState(null);
+  const[ loongitude, setLoongitude ] = useState("-76");
+  const[ laatitude, setLaatitude ] = useState("42.7");
   const[searchQuery,setSearchQuery]=useState("");
-  const[ viewState, setViewState ] = useState({
-    longitude: -76,
-    latitude: 42.7,
-    zoom: 6.0
-  })
+  const [viewState, setViewState] = useState({
+    longitude: parseFloat(loongitude),
+    latitude: parseFloat(laatitude),
+    zoom: 3.5
+  });
 
-  useEffect(()=> {
-    fetch(`https://plants10.p.rapidapi.com/plants/states?fips_code=US${fips}&details?&limit=8`, { 
-                method: "GET",
-                headers: {
-                  'X-RapidAPI-Key': process.env.REACT_APP_KEY,
-                  'X-RapidAPI-Host': 'plants10.p.rapidapi.com',
-                  "Content-Type": "application/json",
-                }
-        }).then((response) => {
-            if (response.ok) {
-              response.json().then((data) => {
-                console.log(data)
-                setPlantList(data.data)
-                console.log(plantList)
-                setFiveplantslist(data.data.slice(0,4))
-              })
-            } else {
-              response.json().then(() => console.log("Message could not be sent"));
-            }
-          })
-  }, [fips]);
+  // useEffect(()=> {
+  //   fetch(`https://plants10.p.rapidapi.com/plants/states?fips_code=US${fips}&details?&limit=8`, { 
+  //               method: "GET",
+  //               headers: {
+  //                 'X-RapidAPI-Key': process.env.REACT_APP_KEY,
+  //                 'X-RapidAPI-Host': 'plants10.p.rapidapi.com',
+  //                 "Content-Type": "application/json",
+  //               }
+  //       }).then((response) => {
+  //           if (response.ok) {
+  //             response.json().then((data) => {
+  //               console.log(data)
+  //               setPlantList(data.data)
+  //               console.log(plantList)
+  //               setFiveplantslist(data.data.slice(0,4))
+  //             })
+  //           } else {
+  //             response.json().then(() => console.log("Message could not be sent"));
+  //           }
+  //         })
+  // }, [fips]);
+
+  // const onMove = useEffect(()=> { 
+  //   evt.
+  // },[laatitude,loongitude]);
 
   return (
     <div className="App">
       <div id="Map1">
-        <SearchBar setFips={setFips} setCoordinates={setCoordinates} searchQuery={searchQuery} setSearchQuery={setSearchQuery}/>
+        <SearchBar setFips={setFips} setLaatitude={setLaatitude} setLoongitude={setLoongitude} searchQuery={searchQuery} setSearchQuery={setSearchQuery}/>
         <p id="motto">Find your native plants!</p>
         <div id="startimg"/>
         <div id="Map2">
           <Map
           mapLib={import('mapbox-gl')}
           mapboxAccessToken="pk.eyJ1IjoibW9yYWxlc2RvcmlzODgwIiwiYSI6ImNsdThoeGwxczBod2wyaHBiZnljazd0eXgifQ.F-FdW2qZVJrZZK8J3vI9xA"
-          initialViewState={viewState}
+          initialViewState={{
+            longitude: -76,
+            latitude: 42.7,
+            zoom: 6.0
+          }}
           mapStyle="mapbox://styles/moralesdoris880/cltox55sx01rl01qp8w1308hu"
           style={{
             width: "60vw",
             height: 600,
             position: 'relative'
+          }}
+          viewState={{
+            longitude: loongitude,
+            latitude: laatitude,
+            zoom: 15.0
           }}
           />;
           <PlantContainer fiveplantslist={fiveplantslist} searchQuery={searchQuery}/>

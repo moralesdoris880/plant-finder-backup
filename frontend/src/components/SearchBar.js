@@ -1,7 +1,7 @@
 import '../App.css';
 import { useState } from 'react';
 
-function SearchBar({setFips, searchQuery, setSearchQuery}) {
+function SearchBar({setFips, searchQuery, setSearchQuery, setLaatitude, setLoongitude}) {
     const[click,setClick]=useState(true);
 
     function ZipcodetoFIPSConversion(e,searchQuery){
@@ -17,6 +17,8 @@ function SearchBar({setFips, searchQuery, setSearchQuery}) {
             if (response.ok) {
               response.json().then((data) => {
                 console.log(data)
+                setLaatitude(data.Data[0].ZipLatitude)
+                setLoongitude(data.Data[0].ZipLongitude)
                 setFips(data.Data[0].StateFIPS)})
             } else {
               response.json().then(() => console.log("Message could not be sent"));
