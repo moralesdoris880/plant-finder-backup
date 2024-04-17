@@ -1,5 +1,19 @@
 import "../PlantContainer.css"
-
+/*
+function PlantImage(plantName){
+    fetch(`https://trefle.io/api/v1/plants?token=4eRwCaJtCTZ3V3Sxxrbs_MfUCIDegzDarZ5T_HhGOcQ&filter[scientific_name]=${plant.scientific_name}`, { 
+            method: "GET",
+    }).then((response) => {
+        if (response.ok) {
+          response.json().then((Data) => {
+            console.log(Data)
+            return(Data.data[0].image_URL)})
+        } else {
+          response.json().then(() => console.log("Message could not be sent"));
+        }
+      })
+}
+*/
 function PlantContainer({fiveplantslist, searchQuery}){
     return(
         <div id="plantcontainerbox">
