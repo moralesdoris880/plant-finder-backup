@@ -3,23 +3,32 @@ body{
   background-color: #789065;
 }
 
+#LearnMoreContainer{
+  height: 100vh;
+  background-color: #fafafa;
+}
+
+.LearnMoreTitle{
+  width: 100vw;
+}
+
 p4{
   font-family: "Abel", sans-serif;
-    font-weight: 20;
-    font-style: normal;
-    color: black;
-    font-size: 25px;
-    text-align: center;
-    position: relative;
-    top: 60px;
-  }
-  p5{
-    font-family: "Abel", sans-serif;
-    font-weight: 20;
-    font-style: normal;
-    color: black;
-    font-size: 25px;
-    text-align: center;
-    position: relative;
-    top: 50px;
-  }
+  font-weight: 20;
+  font-style: normal;
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  position: relative;
+}
+
+p5{
+  font-family: "Abel", sans-serif;
+  font-weight: 20;
+  font-style: normal;
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  position: relative;
+  top: 50px;
+}
