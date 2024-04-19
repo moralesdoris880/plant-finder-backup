@@ -15,7 +15,8 @@ function App() {
   const[ fips, setFips ] = useState(0);
   const[ loongitude, setLoongitude ] = useState("-76");
   const[ laatitude, setLaatitude ] = useState("42.7");
-  const[searchQuery,setSearchQuery]=useState("");
+  const[ searchQuery, setSearchQuery ]=useState("");
+  const[ plantHardinessZone, setPlantHardinessZone ] = useState()
   const [viewState, setViewState] = useState({
     longitude: parseFloat(loongitude),
     latitude: parseFloat(laatitude),
@@ -44,9 +45,25 @@ function App() {
   //         })
   // }, [fips]);
 
-  // const onMove = useEffect(()=> { 
-  //   evt.
-  // },[laatitude,loongitude]);
+  useEffect(()=> {
+    fetch(`https://plant-hardiness-zone.p.rapidapi.com/zipcodes/${searchQuery}`, { 
+                method: "GET",
+                headers: {
+                  'X-RapidAPI-Key': process.env.REACT_APP_KEY,
+                  'X-RapidAPI-Host': 'plant-hardiness-zone.p.rapidapi.com',
+                  "Content-Type": "application/json",
+                }
+        }).then((response) => {
+            if (response.ok) {
+              response.json().then((data) => {
+                setPlantHardinessZone(data.hardiness_zone)
+              })
+            } else {
+              response.json().then(() => console.log("Plant Hardiness could not be sent"));
+            }
+          })
+  }, [ setFips ]);
+
 
   return (
     <div className="App">
@@ -75,7 +92,7 @@ function App() {
             zoom: 15.0
           }}
           />;
-          <PlantContainer fiveplantslist={fiveplantslist} searchQuery={searchQuery}/>
+          <PlantContainer plantHardinessZone={plantHardinessZone} fiveplantslist={fiveplantslist} searchQuery={searchQuery}/>
         </div>
         <ZipCode plantList={plantList}/>
         <Footer/>

@@ -14,10 +14,11 @@ function PlantImage(plantName){
       })
 }
 */
-function PlantContainer({fiveplantslist, searchQuery}){
+function PlantContainer({fiveplantslist, searchQuery, plantHardinessZone}){
     return(
         <div id="plantcontainerbox">
-            <h1 id="searchtitle">Search Results for {searchQuery}</h1>
+            <h1 className="searchtitle">Search Results for {searchQuery}</h1>
+            <h1 className="searchtitle">Plant Hardiness Zone: {plantHardinessZone}</h1>
             <div id="plantcontainerlist">
             {fiveplantslist.length > 0  ? fiveplantslist.map((plant)=>{
                 return(
