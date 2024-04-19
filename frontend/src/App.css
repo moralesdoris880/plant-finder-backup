@@ -3,9 +3,26 @@ body{
   background-color: #FAFAFA;
 }
 
+#plantlogo{
+  position: absolute;
+  left: 29%;
+  top: 36px;
+}
+
+#line{
+  width: 3px;
+  height: 200px;
+  background-color: #FAFAFA;
+}
+
 #pfooter{
   text-shadow: none;
   color: #1A2B28;
+  text-align: left;
+  padding: 12px;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 36px;
 }
 
 #hfooter{
@@ -15,7 +32,7 @@ body{
   color: #1A2B28;
   font-size: 40px;
   padding: 12px;
-  text-shadow: 3px 3px #ADBF97;
+  text-shadow: 2px 2px rgb(109, 124, 90);
   position: relative;
   top: 0;
   text-align: left;

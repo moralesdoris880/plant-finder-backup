@@ -10,19 +10,18 @@ import '../App.css'
 const Footer = () => {
     return (
         <Box>
+            <img id="plantlogo" href="/" src="/plant.png" alt="plantlogo" className='plant' height='50px' width='50px' margin= '0 auto'/>
             <Heading>
-                <p id="pfooter">Thanks for using</p>
                 <h1 id="hfooter">PLANT FINDER</h1>
+                <p id="pfooter">Follow Us</p>
                 <br /> 
-                <FooterLink href="/">
-                <img  href="/" src="/plant.png" alt="plantlogo"  className='plant' height='50px' width='50px' margin= '0 auto'/>
-                </FooterLink>
             </Heading>
+            <div id="line"></div>
              <FooterContainer>
-                <FooterLink href='../About'> About </FooterLink>
-                <FooterLink href='/About/Contact'> Contact </FooterLink>
-                <FooterLink href='/About/MeetDevelopers'> Meet the Developers </FooterLink>
-                <FooterLink href='/About/Resources'> Resources </FooterLink>
+                <FooterLink href='../About'> Our Story </FooterLink>
+                <FooterLink href='/About/MeetDevelopers'> Leadership </FooterLink>
+                <FooterLink href='/About/Contact'> Contact Us</FooterLink>
+                <FooterLink href='/About/Resources'> More Resources </FooterLink>
             </FooterContainer>
         </Box>
     );

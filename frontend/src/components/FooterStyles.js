@@ -3,12 +3,13 @@ import styled from 'styled-components';
 export const Box = styled.div`
     display: flex;
     padding: 20px;  
-    background-color: #FAFAFA;
+    background-color: #ADBF97;
     position: relative;
     align-items: center;
     @media (max-width: 1000px){
         // padding: 70px 30px;
     }
+    width:100vw;
 `;
 
 export const FooterContainer = styled.div`
@@ -18,6 +19,8 @@ export const FooterContainer = styled.div`
     justify-content: center;
     max-width: 1000px;
     margin: 0 auto;
+    margin-left:10px;
+    margin-top:0px;
 `;
 
 export const Column = styled.div`
@@ -31,14 +34,15 @@ export const FooterLink = styled.a`
     color: black;
     margin-bottom: 20 px;
     font-size: 18px;
-    font-family:"Plainfair";
-    font-style: italic;
+    font-family: "Abel", sans-serif;
     text-decoration: none;
-    
+    margin-left:10px;
+    text-align:left;
     &:hover {
-        color: #ADBF97;
+        color: #FAFAFA;
         transition: 200ms ease-in;
     }
+    padding-top:20px;
 `;
 
 export const Heading = styled.p`
@@ -49,7 +53,7 @@ color: #1A2B28;
 font-size: 40px;
 padding: 12px;
 width: 350px;
-margin-left: 10%;
+margin-left: 30%;
 text-shadow: 3px 3px #ADBF97;
 `;
 
