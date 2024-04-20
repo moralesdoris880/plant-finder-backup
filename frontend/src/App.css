@@ -3,6 +3,39 @@ body{
   background-color: #FAFAFA;
 }
 
+.NavLinkTools{
+  background-color: #92B766;
+  height: 28px;
+  padding: 10px;
+  color:#1A2B28;
+  font-family: "Raleway";
+  font-size: 18px;
+  text-align: center;
+}
+
+.NavLinkTools:hover{
+  color: white;
+}
+
+#navbarbuttonicon{
+  font-size: 18px;
+  position: absolute;
+  right: 50px;
+}
+
+#navbarbutton{
+  text-align: center;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-family: "Raleway";
+  font-size: 18px;
+  color: white;
+  background-color: black;
+  border: none;
+  height: 38px;
+}
+
 #plantlogo{
   position: absolute;
   left: 29%;
@@ -69,7 +102,7 @@ body{
 }
 
 #startimg{
-  background-image: url(../public/isaacmartinwallpaper.jpg);
+  background-image: url("../public/isaacmartinwallpaper.jpg");
   background-size: cover;
   height: 100vh;
   width: 100%;
@@ -165,7 +198,7 @@ div.mapboxgl-children{
 }
 
 #NavBar{
-  height: 60px;
+  height: auto;
   width: 100%;
   background-color: #FAFAFA;
   position: fixed;
@@ -178,7 +211,6 @@ div.mapboxgl-children{
 nav{
   position: fixed;
   right: 0;
-  height: 200px;
   width: 200px;
   top: 60px;
   display: flex;

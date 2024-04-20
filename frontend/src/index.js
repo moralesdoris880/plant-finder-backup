@@ -8,7 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LearnMore from './pages/LearnMore';
 import Contact from './pages/Contact';
 import NavBar from './components/NavBar';
-
+import Weed from './pages/Weed';
 import MeetDevelopers from './pages/MeetDevelopers';
 import Resources from './pages/Resources';
 
@@ -23,6 +23,7 @@ root.render(
       <Route exact path='/about/contact'element={<Contact />} />
       <Route exact path='/about/meetdevelopers'element={<MeetDevelopers />} />
       <Route exact path='/about/resources'element={<Resources />} />
+      <Route exact path='/tools/weed'element={<Weed />} />
     </Routes>
     </BrowserRouter>
 );
