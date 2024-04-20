@@ -91,7 +91,7 @@ function App() {
               latitude: laatitude,
               zoom: 15.0
             }}>
-            <NavigationControl/>
+            <NavigationControl position="top-left"/>
           </Map>
           <PlantContainer plantHardinessZone={plantHardinessZone} fiveplantslist={fiveplantslist} searchQuery={searchQuery}/>
         </div>
