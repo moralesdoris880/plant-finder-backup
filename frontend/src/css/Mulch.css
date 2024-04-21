@@ -6,6 +6,52 @@
     height: auto;
 }
 
+#colorList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    margin-top: 100px;
+}
+
+.circleText{
+   position: relative;
+   padding: 20px;
+   text-align: center;
+   font-family: 'Playfair Display';
+   padding-top: 60px;
+}
+
+#black:hover{
+    background-color: black;
+    color: white;
+}
+
+#red:hover{
+    background-color: red;
+    color: white;
+}
+
+#brown:hover{
+    background-color: rgb(87, 50, 28);
+    color: white;
+}
+
+#natural:hover{
+    background-color: rgb(173, 132, 93);
+    color: white;
+}
+
+.circleColor{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #fafafa;
+    border: 1px solid;
+    list-style-type: none;
+    overflow: hidden;
+}
+
 #line2{
     width: 300px;
     height: 1px;

@@ -2,12 +2,36 @@ import '../css/Mulch.css';
 import Footer from '../components/Footer';
 
 function Mulch(){
+    const colorMeaning = [
+        {
+            color: "Black",
+            fact1: "Captures the Sun's UV rays and retains the heat.",
+            fact2: "Weed Growth Prevention.",
+            fact3: "Suggested in cooler climates or early planting."
+        },{
+            color: "Red",
+            fact1: "Provides the soil with nutrients.",
+            fact2: "Retains water moisture.",
+        },{
+            color: "Brown",
+            fact1: "Good insulation for plant roots.",
+            fact2: "Retains water moisture.",
+            fact3: "Provides the soil with nutrients."
+        },{
+            color: "Natural",
+            fact1: "Provides plant growth and soil with nutrients.",
+            fact2: "Slower decomposition.",
+            fact3: "Regulates soil temperature."
+        }
+    ]
+
     return(
         <div>
             <div id="mulchContainer">
                 <div className='space'></div>
                 <div id="mulchContent">
                     <h1 id="mulchTitle">Mulch Guide</h1>
+                    <p id="weedSlogan">Take a look at the different mulch types, benefits, and calculator</p>
                     <div id="mulchInfoTable">
                         <div className='infoBox'>
                             <h2>Organic Mulch</h2>
@@ -65,12 +89,27 @@ function Mulch(){
                     <div>
                         <h2 className="benefitsmulchtitle">Color Selection</h2>
                         <div id="line2"></div>
+                        <div id="colorList">
+                            <li className='circleColor' id="black">
+                                <p className='circleText'>Black</p>
+                            </li>
+                            <li className='circleColor' id="red">
+                                <p className='circleText'>Red</p>
+                            </li>
+                            <li className='circleColor' id="brown">
+                                <p className='circleText'>Brown</p>
+                            </li>
+                            <li className='circleColor' id="natural">
+                                <p className='circleText'>Natural</p>
+                            </li>
+                        </div>
                         <div>
-                            <li></li>
+                            <h2></h2>
+                            <p></p>
                         </div>
                     </div>
                     <div>
-                        <h2>Mulch Calculator</h2>
+                        <h2 className="benefitsmulchtitle">Mulch Calculator</h2>
                     </div>
                 </div>
                 <div className='space'></div>
