@@ -10,6 +10,7 @@ import NavBar from './components/NavBar';
 import Weed from './pages/Weed';
 import MeetDevelopers from './pages/MeetDevelopers';
 import Resources from './pages/Resources';
+import Mulch from './pages/Mulch';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -23,6 +24,7 @@ root.render(
       <Route exact path='/about/meetdevelopers'element={<MeetDevelopers />} />
       <Route exact path='/about/resources'element={<Resources />} />
       <Route exact path='/tools/weed'element={<Weed />} />
+      <Route exact path='/tools/mulch'element={<Mulch />} />
     </Routes>
     </BrowserRouter>
 );
