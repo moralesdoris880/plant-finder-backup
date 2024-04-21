@@ -1,4 +1,5 @@
 import '../css/Mulch.css';
+import { useState } from 'react';
 import Footer from '../components/Footer';
 
 function Mulch(){
@@ -110,6 +111,10 @@ function Mulch(){
                     </div>
                     <div>
                         <h2 className="benefitsmulchtitle">Mulch Calculator</h2>
+                        <form>
+                            <label></label>
+                            <input></input>
+                        </form>
                     </div>
                 </div>
                 <div className='space'></div>
