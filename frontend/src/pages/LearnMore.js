@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './LearnMore.css';
+import '../css/LearnMore.css';
 import Footer from '../components/Footer';
 
 function LearnMore() {

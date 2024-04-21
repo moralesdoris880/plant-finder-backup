@@ -1,4 +1,4 @@
-import "../PlantContainer.css"
+import "../css/PlantContainer.css"
 /*
 function PlantImage(plantName){
     fetch(`https://trefle.io/api/v1/plants?token=4eRwCaJtCTZ3V3Sxxrbs_MfUCIDegzDarZ5T_HhGOcQ&filter[scientific_name]=${plant.scientific_name}`, { 

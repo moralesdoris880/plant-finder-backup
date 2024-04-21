@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './About.css';
+import '../css/About.css';
 import Footer from '../components/Footer';
 
 function About() {

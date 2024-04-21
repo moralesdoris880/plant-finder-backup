@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './MeetDevelopers.css';
+import '../css/MeetDevelopers.css';
 
 
 function MeetDevelopers() {

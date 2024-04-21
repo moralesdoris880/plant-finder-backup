@@ -1,4 +1,4 @@
-import "./ZipCode.css";
+import "../css/ZipCode.css";
 
 function ZipCode({plantList}) {
   return (
