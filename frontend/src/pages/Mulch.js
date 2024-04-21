@@ -37,10 +37,37 @@ function Mulch(){
                         </div>
                     </div>
                     <div>
-                        <h2>Benefits of Mulch</h2>
+                        <h2 className="benefitsmulchtitle">Benefits of Mulch</h2>
+                        <div id="line2"></div>
+                        <div id="mulchbenefitList">
+                            <li className='mulchbenefitItem'>
+                                <h2 className='mulchbenefitTitle'>Nourishes Soil</h2>
+                                <p>As Organic Mulch decomposes, it nourishes the soil and feeds your plants over time.</p>
+                            </li>
+                            <li className='mulchbenefitItem'>
+                                <h2 className='mulchbenefitTitle'>Surpressing Weeds</h2>
+                                <p>Mulch cuts weed seeds from sunlight. Prevents them from growing enough to break the surface.</p>
+                            </li>
+                            <li className='mulchbenefitItem'>
+                                <h2 className='mulchbenefitTitle'>Water Conservation</h2>
+                                <p>Helps soil retain water moisture and lowering amount of watering needed in the plant bed.</p>
+                            </li>
+                            <li className='mulchbenefitItem'>
+                                <h2 className='mulchbenefitTitle'>Regulates Temperature</h2>
+                                <p>Mulch insulates your plants' root systems against the sun and extreme temperature variations.</p>
+                            </li>
+                            <li className='mulchbenefitItem'>
+                                <h2 className='mulchbenefitTitle'>Erosion Prevention</h2>
+                                <p>First defense against nature and prevents wear down of the soil.</p>
+                            </li>
+                        </div>
                     </div>
                     <div>
-                        <h2>Color Selection</h2>
+                        <h2 className="benefitsmulchtitle">Color Selection</h2>
+                        <div id="line2"></div>
+                        <div>
+                            <li></li>
+                        </div>
                     </div>
                     <div>
                         <h2>Mulch Calculator</h2>
