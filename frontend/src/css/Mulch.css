@@ -6,6 +6,32 @@
     height: auto;
 }
 
+#calculatorInfo{
+    position: relative;
+    font-family: 'Playfair Display';
+    top: 120px;
+    width: 800px;
+    left: 5%;
+    font-size: 14px;
+}
+
+#mulchCalculatorForm{
+    background-color: #C8E27A;
+    width: 800px;
+    padding: 10px;
+    position: relative;
+    top: 100px;
+    left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 1px solid;
+}
+
+#mulchCalculatorForm label{
+    font-family: 'Playfair Display';
+}
+
 #mulchInfo{
     width: 600px;
     height: 150px;
@@ -125,6 +151,11 @@
     line-height: 1.5;
 }
 
+#mulchCalculatorContainer{
+    height: 300px;
+    width: 100%;
+}
+
 #mulchbenefitList{
     display: flex;
     flex-direction: row;
@@ -142,6 +173,8 @@
 #mulchContent{
     width: 100%;
     background-color: #fafafa;
+    border: 1px solid;
+    height: auto;
 }
 
 #mulchTitle{

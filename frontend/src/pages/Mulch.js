@@ -113,19 +113,26 @@ function Mulch(){
                             </li>
                         </div>
                         <div style={{display: displayMulchColorInfo? "none":"flex"}} id="mulchInfo">
-                            <h2>{mulchInfo? mulchInfo.color.toUpperCase(): null}</h2>
+                            <h2>{mulchInfo? mulchInfo.color: null}</h2>
                             <p>{mulchInfo? mulchInfo.fact1: null}</p>
                             <p>{mulchInfo? mulchInfo.fact2: null}</p>
                             <p>{mulchInfo? mulchInfo.fact3: null}</p>
                         </div>
                     </div>
-                    <div>
-                        <h2 className="benefitsmulchtitle">Mulch Calculator</h2>
-                        <form>
-                            <label></label>
+                    <div id="mulchCalculatorContainer">
+                        <h2 className="benefitsmulchtitle" style={{width:"100%", height:"30px"}}>Mulch Calculator</h2>
+                        <div id="line2"></div>
+                        <form id="mulchCalculatorForm">
+                            <label>Square Feet:</label>
+                            <input></input>
+                            <label> x Depth:</label>
+                            <input></input>
+                            <label> / 324 = </label>
                             <input></input>
                         </form>
+                        <p id="calculatorInfo">* The value obtained after calculation should be rounded up to the nearest whole number. Imputing your measurements into a mulch estimate tool, will automatically generate the required value in cubic yards.</p>
                     </div>
+                    <div style={{marginBottom: "20px"}}><button className='weedSelectionItem'><a id="weeda" rel="noreferrer" target="_blank" href='https://www.usda.gov/peoples-garden/soil-health/mulch'>USDA Mulch Guide</a></button></div>
                 </div>
                 <div className='space'></div>
             </div>
