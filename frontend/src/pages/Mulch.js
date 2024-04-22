@@ -1,10 +1,13 @@
 import '../css/Mulch.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Footer from '../components/Footer';
 
 function Mulch(){
     const [ displayMulchColorInfo, setDisplayMulchColorInfo ] = useState(true);
     const [ mulchInfo, setMulchInfo ] = useState([]);
+    const [ squareFeet, setSquareFeet ] = useState(0);
+    const [ depth, setDepth ] = useState(0);
+    const [ cubicYards, setCubicYards ] = useState(0);
     const colorMeaning = [
         {
             color: "black",
@@ -27,6 +30,10 @@ function Mulch(){
             fact3: "Regulates soil temperature."
         }
     ]
+
+    useEffect(() => {
+        setCubicYards((squareFeet*depth)/324)
+    }, [squareFeet,depth]);
 
     function handleColorChange(e){
         setMulchInfo(colorMeaning.find((item)=> item.color === e))
@@ -124,11 +131,11 @@ function Mulch(){
                         <div id="line2"></div>
                         <form id="mulchCalculatorForm">
                             <label>Square Feet:</label>
-                            <input></input>
+                            <input type='text' placeholder={squareFeet} onChange={(e) => setSquareFeet(e.target.value)}></input>
                             <label> x Depth:</label>
-                            <input></input>
+                            <input type='text' placeholder={depth} onChange={(e) => setDepth(e.target.value)}></input>
                             <label> / 324 = </label>
-                            <input></input>
+                            <input type='text' value={cubicYards}></input>
                         </form>
                         <p id="calculatorInfo">* The value obtained after calculation should be rounded up to the nearest whole number. Imputing your measurements into a mulch estimate tool, will automatically generate the required value in cubic yards.</p>
                     </div>
