@@ -3,28 +3,36 @@ import { useState } from 'react';
 import Footer from '../components/Footer';
 
 function Mulch(){
+    const [ displayMulchColorInfo, setDisplayMulchColorInfo ] = useState(true);
+    const [ mulchInfo, setMulchInfo ] = useState([]);
     const colorMeaning = [
         {
-            color: "Black",
+            color: "black",
             fact1: "Captures the Sun's UV rays and retains the heat.",
             fact2: "Weed Growth Prevention.",
             fact3: "Suggested in cooler climates or early planting."
         },{
-            color: "Red",
+            color: "red",
             fact1: "Provides the soil with nutrients.",
             fact2: "Retains water moisture.",
         },{
-            color: "Brown",
+            color: "brown",
             fact1: "Good insulation for plant roots.",
             fact2: "Retains water moisture.",
             fact3: "Provides the soil with nutrients."
         },{
-            color: "Natural",
+            color: "natural",
             fact1: "Provides plant growth and soil with nutrients.",
             fact2: "Slower decomposition.",
             fact3: "Regulates soil temperature."
         }
     ]
+
+    function handleColorChange(e){
+        setMulchInfo(colorMeaning.find((item)=> item.color === e))
+        setDisplayMulchColorInfo(!displayMulchColorInfo)
+        console.log(mulchInfo.color)
+    }
 
     return(
         <div>
@@ -91,22 +99,24 @@ function Mulch(){
                         <h2 className="benefitsmulchtitle">Color Selection</h2>
                         <div id="line2"></div>
                         <div id="colorList">
-                            <li className='circleColor' id="black">
+                            <li className='circleColor' id="black" onClick={()=>handleColorChange("black")}>
                                 <p className='circleText'>Black</p>
                             </li>
-                            <li className='circleColor' id="red">
+                            <li className='circleColor' id="red" onClick={()=>handleColorChange("red")}>
                                 <p className='circleText'>Red</p>
                             </li>
-                            <li className='circleColor' id="brown">
+                            <li className='circleColor' id="brown" onClick={()=>handleColorChange("brown")}>
                                 <p className='circleText'>Brown</p>
                             </li>
-                            <li className='circleColor' id="natural">
+                            <li className='circleColor' id="natural" onClick={()=>handleColorChange("natural")}>
                                 <p className='circleText'>Natural</p>
                             </li>
                         </div>
-                        <div>
-                            <h2></h2>
-                            <p></p>
+                        <div style={{display: displayMulchColorInfo? "none":"flex"}} id="mulchInfo">
+                            <h2>{mulchInfo? mulchInfo.color.toUpperCase(): null}</h2>
+                            <p>{mulchInfo? mulchInfo.fact1: null}</p>
+                            <p>{mulchInfo? mulchInfo.fact2: null}</p>
+                            <p>{mulchInfo? mulchInfo.fact3: null}</p>
                         </div>
                     </div>
                     <div>
