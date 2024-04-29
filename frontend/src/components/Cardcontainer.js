@@ -8,7 +8,7 @@ const CardContainer = () => {
             <img className="Card-image" src="lavendar.webp" alt="plant"></img>
           </div>
           <div className="content">
-            <h1> lavendar </h1>
+            <h1> strawberry </h1>
             <p> scientific_name</p>
           </div>
         </div>
