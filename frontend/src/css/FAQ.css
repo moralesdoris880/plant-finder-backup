@@ -1,0 +1,43 @@
+ body{
+    height: 100vh;
+    background-color: #fafafa;
+  }
+
+.faqLink{
+     color: green;
+     font-weight: bold;
+}
+
+/* 
+.FAQdrop{
+    background-color: #92B766;
+    height: 28px;
+    padding: 10px;
+    color:#1A2B28;
+    font-family: "Raleway";
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .FAQdrop:hover{
+    color: white;
+  }
+  
+  #navbarbuttonicon{
+    font-size: 18px;
+    position: absolute;
+    right: 15px;
+  }
+  
+  #navbarbutton{
+    text-align: center;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-family: "Raleway";
+    font-size: 18px;
+    color: black;
+    background-color: black;
+    border: none;
+    height: 38px;
+  }  */

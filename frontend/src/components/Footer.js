@@ -21,7 +21,7 @@ const Footer = () => {
                 <FooterLink href='../About'> Our Story </FooterLink>
                 <FooterLink href='/About/MeetDevelopers'> Leadership </FooterLink>
                 <FooterLink href='/About/Contact'> Contact Us</FooterLink>
-                <FooterLink href='/About/Resources'> More Resources </FooterLink>
+                <FooterLink href='/LearnMore/Resources'> More Resources </FooterLink>
             </FooterContainer>
         </Box>
     );
