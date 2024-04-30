@@ -17,10 +17,38 @@ body{
   color: white;
 }
 
+.NavLinkAbout{
+  background-color: #92B766;
+  height: 28px;
+  padding: 10px;
+  color:#1A2B28;
+  font-family: "Raleway";
+  font-size: 18px;
+  text-align: center;
+}
+
+.NavLinkAbout:hover{
+  color: white;
+}
+
+.NavLinkLearning{
+  background-color: #92B766;
+  height: 28px;
+  padding: 10px;
+  color:#1A2B28;
+  font-family: "Raleway";
+  font-size: 18px;
+  text-align: center;
+}
+
+.NavLinkLearning:hover{
+  color: white;
+}
+
 #navbarbuttonicon{
   font-size: 18px;
   position: absolute;
-  right: 50px;
+  right: 15px;
 }
 
 #navbarbutton{
@@ -211,7 +239,7 @@ div.mapboxgl-children{
 nav{
   position: fixed;
   right: 0;
-  width: 200px;
+  width: 240px;
   top: 60px;
   display: flex;
   flex-direction: column;

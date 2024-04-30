@@ -11,6 +11,8 @@ import Weed from './pages/Weed';
 import MeetDevelopers from './pages/MeetDevelopers';
 import Resources from './pages/Resources';
 import Mulch from './pages/Mulch';
+import FAQ from './pages/FAQ';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,9 +22,10 @@ root.render(
       <Route exact strict path='/'element={<App />} />
       <Route exact path='/about'element={<About />} />
       <Route exact path='/learnMore'element={<LearnMore />} />
+      <Route exact path='/learnMore/faq'element={<FAQ />} />
+      <Route exact path='/learnMore/resources'element={<Resources />} />
       <Route exact path='/about/contact'element={<Contact />} />
       <Route exact path='/about/meetdevelopers'element={<MeetDevelopers />} />
-      <Route exact path='/about/resources'element={<Resources />} />
       <Route exact path='/tools/weed'element={<Weed />} />
       <Route exact path='/tools/mulch'element={<Mulch />} />
     </Routes>
