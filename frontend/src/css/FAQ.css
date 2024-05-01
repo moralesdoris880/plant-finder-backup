@@ -8,6 +8,58 @@
      font-weight: bold;
 }
 
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin-bottom: 20px;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc; 
+  }
+  
+  .panel {
+    padding: 20px 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .faqHeader {
+    font-size: 50px;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    font-style: normal;
+    color: #1A2B28;
+    font-style: italic;
+    font-size: 48px;
+    padding-bottom: 150px;
+  }
+
+  hFAQ{
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    color: #1A2B28;
+    font-style: italic;
+    text-shadow: none;
+    text-align: center;
+    position: relative;
+    display: block;
+  }
+  .faq{
+    top: 0px;
+  }
+
 /* 
 .FAQdrop{
     background-color: #92B766;
